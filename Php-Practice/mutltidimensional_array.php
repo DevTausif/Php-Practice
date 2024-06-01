@@ -1,7 +1,7 @@
 <?php
    
     $emp= [
-        ["ID","Name","Job","Salary"],
+
         [1,"Kabir","Soft.Eng",200000],
         [2,"Shafi","Soft.Eng",150000],
         [3,"Rafi","Civil.Eng",450000],
@@ -10,7 +10,13 @@
    
 
 //using for loop for multidimensional array
-echo"<table border='2px'>";
+echo"<table border='2px' cellpadding='5px' cellspacing='0px'>";
+echo "<tr>
+    <th>Employee ID</th>
+    <th>Employee Name</th>
+    <th>Employee Job</th>
+    <th>Employee Salary</th>
+</tr>";
 for ($row= 0; $row< 4; $row++){
     echo "<tr>";
     for ($col= 0; $col< 4; $col++){
@@ -24,7 +30,13 @@ echo"</table>";
 echo "<br>";
 
 //using foreach loop for multidimensional array
-echo "<table border ='2 px'>";
+echo"<table border='2px' cellpadding='5px' cellspacing='0px'>";
+echo "<tr>
+    <th>Employee ID</th>
+    <th>Employee Name</th>
+    <th>Employee Job</th>
+    <th>Employee Salary</th>
+</tr>";
 foreach ($emp as $row) {
     echo "<tr>";
     foreach ($row as $col) {       
