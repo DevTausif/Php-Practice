@@ -6,7 +6,7 @@
     ];
     echo"<ul>";
         foreach ($age as $key => $value) {
-            echo "<h1><li>$key = $value</li></h1>";
+            echo "<h1><li>$key is $value years old</li></h1>";
         }
     echo"</ul>";
 ?>
